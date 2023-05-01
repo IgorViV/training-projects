@@ -9,8 +9,9 @@
     <title>Старт</title>
 </head>
 <body>
-<!--header-->
-<header class="px-2 border-b flex items-center justify-between">
+    <div class="max-w-screen-xl mx-auto">
+        <!--header-->
+        <header class="px-2 border-b flex items-center justify-between">
     <a class="uppercase font-bold text-purple-800" href="#">webDev</a>
     <nav class="flex items-center">
         <ul class="text-gray-500 font-semibold inline-flex items-center">
@@ -28,9 +29,8 @@
         </ul>
     </nav>
 </header>
-<main>
-    <!--breadcrumbs-->
-    <div class="px-2 flex items-center">
+        <!--breadcrumbs-->
+        <div class="px-2 flex items-center">
         <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
             <a class="text-gray-600 hover:text-gray-900" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -51,9 +51,28 @@
             <a class="text-gray-600 hover:text-gray-900" href="#">Tech</a>
         </div>
     </div>
+        <!--banners-->
+        <section class="px-2 flex space-x-2">
+            <a class="w-2/3 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="">
+                <div class="p-4 absolute bottom-0 left-0 z-20">
+                    <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+                        Lorem ipsum 1
+                    </h2>
+                </div>
+            </a>
 
-    <!--post cards-->
-    <section class="px-2">
+            <a class="w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="">
+                <div class="p-4 absolute bottom-0 left-0 z-20">
+                    <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+                        Lorem ipsum 2
+                    </h2>
+                </div>
+            </a>
+        </section>
+        <main class="flex">
+    <div class="w-2/3">
+        <!--post cards-->
+        <section class="px-2">
         <a class="block mb-10" href="#">
             <div class="flex">
                 <div>
@@ -88,8 +107,8 @@
         </a>
     </section>
 
-    <!--pagination-->
-    <div class="mt-20 mb-10">
+        <!--pagination-->
+        <div class="mt-20 mb-10">
         <ul class="flex justify-center">
             <li><a class="pagination-item rounded-l-lg" href="#">Previous</a></li>
             <li><a class="pagination-item" href="#">1</a></li>
@@ -100,12 +119,13 @@
             <li><a class="pagination-item rounded-r-lg" href="#">Next</a></li>
         </ul>
     </div>
+    </div>
+    <div class="w-1/3 px-2">
+        <!--divider-->
+        <div class="border border-dotted"></div>
 
-    <!--divider-->
-    <div class="border border-dotted"></div>
-
-    <!--subscribe-->
-    <div class="my-5">
+        <!--subscribe-->
+        <div class="my-5">
         <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">Subscribe</h5>
         <p class="text-gray-600 mb--4">Subscribe to our newsletter</p>
         <input
@@ -116,20 +136,22 @@
         <button class="py-2 px-4 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">Subscribe</button>
     </div>
 
-    <!--divider-->
-    <div class="border border-dotted"></div>
+        <!--divider-->
+        <div class="border border-dotted"></div>
+    </div>
 </main>
-<!--footer-->
-<footer class="border-t mt-10 py-10 px-2">
-    <div>
-        <div class="mb-5">
+        <!--footer-->
+        <footer class="border-t mt-10 py-10 px-2">
+    <div class="flex">
+        <div class="mb-5 w-2/5">
             <h6 class="font-semibold text-gray-700 mb-3">Company</h6>
             <ul>
                 <li><a class="footer-link" href="#">Team</a></li>
                 <li><a class="footer-link" href="#">About Us</a></li>
             </ul>
         </div>
-        <div class="mb-5">
+
+        <div class="mb-5 w-2/5">
             <h6 class="font-semibold text-gray-700 mb-3">Content</h6>
             <ul>
                 <li><a class="footer-link" href="#">Block</a></li>
@@ -137,7 +159,8 @@
                 <li><a class="footer-link" href="#">Documentation</a></li>
             </ul>
         </div>
-        <div>
+
+        <div class="w-1/5">
             <h6 class="font-semibold text-gray-700 mb-3">Contact Us</h6>
             <ul class="flex">
                 <li class="mr-2">
@@ -166,5 +189,6 @@
         </div>
     </div>
 </footer>
+    </div>
 </body>
 </html>
