@@ -37,7 +37,7 @@
     <!--breadcrumbs-->
     <div class="px-2 flex items-center">
         <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-            <a class="text-gray-600 hover:text-gray-900" href="#">
+            <a class="text-gray-600 hover:text-gray-900 transition-all duration-300" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -50,14 +50,14 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
                 </svg>
             </span>
-            <a class="text-gray-600 hover:text-gray-900" href="#">News</a>
+            <a class="text-gray-600 hover:text-gray-900 transition-all duration-300" href="#">News</a>
             <span class="mx-2 text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
                 </svg>
             </span>
-            <a class="text-gray-600 hover:text-gray-900" href="#">Tech</a>
+            <a class="text-gray-600 hover:text-gray-900 transition-all duration-300" href="#">Tech</a>
         </div>
     </div>
     <!--banners-->
@@ -70,6 +70,13 @@
                 <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
                     Lorem ipsum 1
                 </h2>
+                <div class="flex mt-3">
+                    <img class="w-10 h-10 rounded-full mr-2 object-cover" src="https://randomuser.me/api/portraits/men/82.jpg" alt="author">
+                    <div>
+                        <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                        <time class="text-gray-400 text-xs">1 May 2023</time>
+                    </div>
+                </div>
             </div>
         </a>
         <a class="w-full lg:w-2/3 bg-gradient-to-tr bg-purple-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
@@ -80,6 +87,13 @@
                 <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
                     Lorem ipsum 2
                 </h2>
+                <div class="flex mt-3">
+                    <img class="w-10 h-10 rounded-full mr-2 object-cover" src="https://randomuser.me/api/portraits/men/81.jpg" alt="author">
+                    <div>
+                        <p class="font-semibold text-gray-200 text-sm">Nick Jonson</p>
+                        <time class="text-gray-400 text-xs">2 May 2023</time>
+                    </div>
+                </div>
             </div>
         </a>
     </section>
@@ -89,7 +103,7 @@
             <section class="px-2">
                 <a class="block w-full lg:flex mb-10" href="#">
                     <img class="w-full lg:w-48 h-48 lg:mr-4 opacity-80 object-cover" src="/public/images/img-3.jpg" alt="img">
-                    <div class="flex">
+                    <div class="flex flex-col justify-between">
                         <div>
                             <h3 class="mb-2 text-gray-700 font-bold text-2xl">Loren Ipsum 1</h3>
                             <p class="text-gray-700">
@@ -100,12 +114,19 @@
                                 voluptate! Eaque, iste!
                             </p>
                         </div>
+                        <div class="flex mt-3">
+                            <img class="w-10 h-10 rounded-full mr-2 object-cover" src="https://randomuser.me/api/portraits/men/84.jpg" alt="author">
+                            <div>
+                                <p class="font-semibold text-gray-400 text-sm">James Abramson</p>
+                                <time class="text-gray-400 text-xs">29 april 2023</time>
+                            </div>
+                        </div>
                     </div>
                 </a>
 
                 <a class="block w-full lg:flex mb-10" href="#">
                     <img class="w-full lg:w-48 h-48 lg:mr-4 opacity-80 object-cover" src="/public/images/img-4.jpg" alt="img">
-                    <div class="flex">
+                    <div class="flex flex-col justify-between">
                         <div>
                             <h3 class="mb-2 text-gray-700 font-bold text-2xl">Loren Ipsum 2</h3>
                             <p class="text-gray-700">
@@ -116,12 +137,19 @@
                                 voluptate! Eaque, iste!
                             </p>
                         </div>
+                        <div class="flex mt-3">
+                            <img class="w-10 h-10 rounded-full mr-2 object-cover" src="https://randomuser.me/api/portraits/men/85.jpg" alt="author">
+                            <div>
+                                <p class="font-semibold text-gray-400 text-sm">Jeffrey Backer</p>
+                                <time class="text-gray-400 text-xs">26 april 2023</time>
+                            </div>
+                        </div>
                     </div>
                 </a>
 
                 <a class="block w-full lg:flex mb-10" href="#">
                     <img class="w-full lg:w-48 h-48 lg:mr-4 opacity-80 object-cover" src="/public/images/img-5.jpg" alt="img">
-                    <div class="flex">
+                    <div class="flex flex-col justify-between">
                         <div>
                             <h3 class="mb-2 text-gray-700 font-bold text-2xl">Loren Ipsum 3</h3>
                             <p class="text-gray-700">
@@ -131,6 +159,13 @@
                                 quis quod quos repellendus sed sint sit suscipit vel velit veniam veritatis. Minus quos,
                                 voluptate! Eaque, iste!
                             </p>
+                        </div>
+                        <div class="flex mt-3">
+                            <img class="w-10 h-10 rounded-full mr-2 object-cover" src="https://randomuser.me/api/portraits/men/86.jpg" alt="author">
+                            <div>
+                                <p class="font-semibold text-gray-400 text-sm">Matthew Campbell</p>
+                                <time class="text-gray-400 text-xs">25 april 2023</time>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -158,28 +193,28 @@
                     Popular news
                 </h5>
                 <ul>
-                    <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+                    <li class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300">
                         <a class="flex items-center text-gray-600" href="#">
                             <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"></span>
                             Vue
                             <span class="ml-auto text-gray-500">23 articles</span>
                         </a>
                     </li>
-                    <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+                    <li class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300">
                         <a class="flex items-center text-gray-600" href="#">
                             <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"></span>
                             Svelte
                             <span class="ml-auto text-gray-500">20 articles</span>
                         </a>
                     </li>
-                    <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+                    <li class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300">
                         <a class="flex items-center text-gray-600" href="#">
                             <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700""></span>
                             Angular
                             <span class="ml-auto text-gray-500">15 articles</span>
                         </a>
                     </li>
-                    <li class="px-1 py-4 border-y border-white hover:border-gray-200">
+                    <li class="px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300">
                         <a class="flex items-center text-gray-600" href="#">
                             <span class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700""></span>
                             React
@@ -199,9 +234,9 @@
                     <input
                             placeholder="your email address"
                             type="email"
-                            class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600"
+                            class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600 transition-all duration-300"
                     >
-                    <button class="py-2 px-4 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">Subscribe
+                    <button class="py-2 px-4 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800 transition-all duration-300">Subscribe
                     </button>
                 </div>
                 <!--divider-->
